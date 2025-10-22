@@ -1,5 +1,8 @@
 # 📊 Excel Data Analysis: Exam Scores vs Attendance and Study Hours
 
+![icxh_5r4u_220908](https://github.com/user-attachments/assets/bc7f6a3f-ef4d-4bfa-b8e7-3b08e572e5f6)
+
+
 ## 🧾 Project Overview
 
 This project analyzes the relationship between **Exam Scores**, **Attendance Percentage**, and **Study Hours per Day** using Microsoft Excel. The dataset represents students' academic performance metrics and aims to identify how study habits and class attendance influence exam outcomes.
