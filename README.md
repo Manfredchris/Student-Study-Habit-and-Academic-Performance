@@ -1,4 +1,4 @@
-# 📊 Excel Data Analysis: Exam Scores vs Attendance and Study Hours
+# 📊 Students Habit and Academic Performance
 
 ![icxh_5r4u_220908](https://github.com/user-attachments/assets/bc7f6a3f-ef4d-4bfa-b8e7-3b08e572e5f6)
 
