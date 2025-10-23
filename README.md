@@ -128,7 +128,7 @@ The Pivot Table summarizes attendance and study hours corresponding to each exam
 
 **Adi Christian**
 Data Analysis and Research Enthusiast
-📧 Contact: [Your Email or GitHub Profile Link]
+📧 Contact: [Manfredrayner456@gmail.com or GitHub Profile Link]
 🔗 GitHub Repository: [Add Your Repo URL Here]
 
 ---
