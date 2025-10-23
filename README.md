@@ -9,18 +9,6 @@ This project analyzes the relationship between **Exam Scores**, **Attendance Per
 
 The analysis was completed using **Excel Pivot Tables**, **Charts**, and **Basic Statistical Techniques**.
 
----
-
-
-# 📊 Excel Data Analysis Project
-
-## 🧾 Project Overview
-
-This project presents a comprehensive Excel-based analysis of **student performance and study habits**. It explores relationships among **exam scores**, **attendance percentage**, and **study hours per day** through **Pivot Tables**, **Charts**, **Correlation**, and **Regression Analysis**.
-
-The goal is to use Excel as a powerful analytical tool to derive insights about student performance patterns and identify key predictors of success.
-
----
 
 ## 🧩 Workbook Contents
 
