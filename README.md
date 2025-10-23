@@ -156,7 +156,7 @@ The correlation matrix confirms that study hours and attendance are both directl
 
 **Adi Christian**
 Data Analyst | Research Engineer
-📧 [Your Email Here]
+📧 [Manfredrayner456@gmail.com]
 🌐 [GitHub Profile or LinkedIn]
 
 ---
@@ -168,7 +168,6 @@ This repository is licensed under the **MIT License**. You are free to use and m
 ---
 
 
-This project is released under the **MIT License** — you are free to use, modify, and distribute with attribution.
 
 ---
 
