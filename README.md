@@ -11,129 +11,174 @@ The analysis was completed using **Excel Pivot Tables**, **Charts**, and **Basic
 
 ---
 
-## 📂 Dataset Description
 
-| Variable                      | Description                                                                       | Data Type  |
-| ----------------------------- | --------------------------------------------------------------------------------- | ---------- |
-| **Exam Score**                | Student’s final exam score (out of 100)                                           | Numeric    |
-| **Attendance Percentage (%)** | Sum of each student’s attendance contribution as a percentage of total attendance | Percentage |
-| **Study Hours per Day**       | Total hours spent studying daily per score group                                  | Numeric    |
+# 📊 Excel Data Analysis Project
 
-### 🧮 Dataset Summary
+## 🧾 Project Overview
 
-* **Total Attendance:** 100.00%
-* **Total Study Hours:** 421 hours
-* **Exam Score Range:** 53 – 100
+This project presents a comprehensive Excel-based analysis of **student performance and study habits**. It explores relationships among **exam scores**, **attendance percentage**, and **study hours per day** through **Pivot Tables**, **Charts**, **Correlation**, and **Regression Analysis**.
 
-| Score Range | Attendance (%) | Study Hours | Interpretation                                                      |
-| ----------- | -------------- | ----------- | ------------------------------------------------------------------- |
-| 90–100      | 64.37%         | 283         | Excellent attendance and study discipline correlate with top scores |
-| 80–89       | 24.59%         | 103         | Moderate attendance and study effort produce average performance    |
-| 70–79       | 15.15%         | 48          | Decreasing attendance and study time lead to lower scores           |
-| Below 70    | 2.44%          | 7           | Very low attendance and study time result in poor performance       |
+The goal is to use Excel as a powerful analytical tool to derive insights about student performance patterns and identify key predictors of success.
 
 ---
 
-## 📈 Analysis Objectives
+## 🧩 Workbook Contents
 
-1. **Identify patterns** between attendance and exam performance.
-2. **Evaluate the relationship** between study hours and exam scores.
-3. **Determine correlation strength** between effort-based variables and academic results.
-4. **Visualize data** using appropriate Excel charts for interpretation.
-
----
-
-## ⚙️ Tools and Techniques Used
-
-* **Microsoft Excel**
-
-  * Data Cleaning and Organization
-  * Pivot Table Analysis
-  * Percentage and Sum Calculations
-  * Chart Visualization
-  * Correlation Observation
+| Sheet Name                        | Description                                               |
+| --------------------------------- | --------------------------------------------------------- |
+| `enhanced_student_habits_per (3)` | Primary dataset with attendance, study hours, and scores. |
+| `CLEANED DATASET`                 | Data prepared for statistical analysis.                   |
+| `BUS. Q1`                         | Pivot analysis of exam scores vs. attendance.             |
+| `BUS.Q2`                          | Analysis of average study hours and exam performance.     |
+| `BUS.Q3.`                         | Attendance distribution by performance level.             |
+| `Multiple Regression`             | Regression model predicting exam scores.                  |
+| `Correlation`                     | Pairwise correlation matrix.                              |
 
 ---
 
-## 📊 Pivot Table Configuration
+## 📈 Data Analysis and Visualization
 
-| Field                          | Area in Pivot Table |
-| ------------------------------ | ------------------- |
-| **Exam Score**                 | Rows                |
-| **Sum of Attendance (%)**      | Values              |
-| **Sum of Study Hours per Day** | Values              |
+### 1. Enhanced Student Habits Performance
 
-The Pivot Table summarizes attendance and study hours corresponding to each exam score.
+This dataset contains individual student records linking attendance, daily study time, and final exam scores.
 
----
+**Visualization 1: Relationship between Attendance and Exam Scores**
+![Attendance vs Exam Score](images/chart1_attendance_score.png)
+*Interpretation:* A clear upward trend shows that higher attendance correlates with better academic outcomes.
 
-## 📉 Recommended Charts and Their Purpose
-
-| Chart Type                  | Description                                                 | Purpose                                   |
-| --------------------------- | ----------------------------------------------------------- | ----------------------------------------- |
-| **Clustered Column Chart**  | Displays attendance and study hours per exam score          | Compare student performance visually      |
-| **Line Chart**              | Shows upward or downward performance trends                 | Identify positive correlations            |
-| **Combo Chart (Dual Axis)** | Combines Attendance (%) and Study Hours on different scales | Best for showing relationship strength    |
-| **Scatter Plot**            | Plots Exam Scores vs Attendance or Study Hours              | Evaluate correlation strength numerically |
+**Visualization 2: Study Hours vs Exam Scores**
+![Study Hours vs Exam Scores](images/chart2_studyhours_score.png)
+*Interpretation:* Students who study consistently achieve better results; study time has a stronger influence than attendance alone.
 
 ---
 
-## 🔍 Key Findings
+### 2. Cleaned Dataset
 
-* Exam performance **increases with higher attendance and longer study hours**.
-* Students scoring above 90 recorded **over 60% of total attendance and 67% of study hours**.
-* Scores below 70 had **less than 3% attendance contribution** — strong evidence of disengagement.
-* A **positive correlation** exists between:
+![Cleaned Data Overview](images/chart3_cleaned_dataset.png)
+*This chart shows the cleaned and standardized dataset ready for analysis.*
 
-  * Exam Score ↔ Attendance Percentage
-  * Exam Score ↔ Study Hours per Day
+**Key Steps:**
 
----
-
-## 📘 Interpretation Summary
-
-* **High Attendance = Better Scores**: Consistent class participation leads to improved academic outcomes.
-* **More Study Hours = Higher Scores**: Study commitment is directly tied to exam performance.
-* **Low Effort = Poor Results**: Students with minimal attendance or study time underperform significantly.
-* **Dual Influence**: Attendance and study time jointly determine success.
+* Removed duplicates
+* Replaced missing values
+* Normalized numeric fields
 
 ---
 
-## 🧩 Project Structure
+### 3. Business Question Analyses
+
+#### **BUS. Q1**
+
+![Q1 Performance Chart](images/chart4_bus_q1.png)
+*Interpretation:* Exam scores increase with higher attendance and regular study habits. Students attending more than 80% of classes perform better overall.
+
+#### **BUS.Q2**
+
+![Q2 Average Study Hours](images/chart5_bus_q2.png)
+*Interpretation:* Higher average study hours correspond to increased exam scores, confirming study time as a strong predictor of success.
+
+#### **BUS.Q3.**
+
+![Q3 Attendance Distribution](images/chart6_bus_q3.png)
+*Interpretation:* Most high-performing students belong to attendance groups above 85%. Low attendance correlates with poor performance clusters.*
+
+---
+
+### 4. Multiple Regression Analysis
+
+![Regression Output](images/chart7_regression.png)
+
+**Key Regression Statistics:**
+
+| Metric            | Value  |
+| ----------------- | ------ |
+| Multiple R        | 0.509  |
+| R Square          | 0.259  |
+| Adjusted R Square | 0.118  |
+| Significance F    | 0.0396 |
+
+**Interpretation:**
+The regression model indicates that **attendance** and **study hours** jointly explain about **26% of the variation** in exam performance. Both variables have **positive coefficients**, suggesting they improve performance when increased.
+
+---
+
+### 5. Correlation Matrix
+
+![Correlation Chart](images/chart8_correlation.png)
+
+**Correlation Coefficients:**
+
+| Variable 1   | Variable 2  | Correlation | Interpretation                 |
+| ------------ | ----------- | ----------- | ------------------------------ |
+| Attendance % | Exam Score  | +0.48       | Moderate positive correlation  |
+| Study Hours  | Exam Score  | +0.52       | Strong positive correlation    |
+| Attendance % | Study Hours | +0.40       | Moderate positive relationship |
+
+**Interpretation:**
+The correlation matrix confirms that study hours and attendance are both directly proportional to exam outcomes.
+
+---
+
+## 🧠 Insights and Findings
+
+* Study discipline (hours/day) is the **strongest performance factor**.
+* Attendance supports learning consistency but is secondary to daily study.
+* Statistical evidence (R² = 0.26, p < 0.05) confirms a significant positive impact of these variables on performance.
+
+---
+
+## 🛠 Tools and Methods
+
+* **Microsoft Excel**: Data cleaning, pivot analysis, regression, and visualization
+* **Statistical Techniques**: Correlation, Regression Analysis, Descriptive Statistics
+* **Charts Used**: Column, Scatter, Combo, Line, and Pie Charts
+
+---
+
+## 📘 How to Use
+
+1. Clone or download this repository.
+2. Open the Excel workbook.
+3. Navigate between sheets to view raw data, cleaned dataset, and analyses.
+4. To view charts, go to the `/images` folder.
+5. Compare trends using the included Pivot Table slicers.
+
+---
+
+## 📂 Folder Structure
 
 ```
-📁 Excel-Data-Analysis/
-│
-├── 📄 data.xlsx                # Raw dataset (Exam Scores, Attendance, Study Hours)
-├── 📄 analysis_pivot.xlsx      # Processed data with Pivot Tables
-├── 📊 charts/                  # Folder containing all Excel-generated charts
-│   ├── attendance_vs_score.png
-│   ├── studyhours_vs_score.png
-│   └── combo_chart.png
-├── 📘 README.md                # Project documentation (this file)
-└── 📑 summary_report.pdf       # Final analytical report (optional)
+├── README.md
+├── data/
+│   └── student_analysis.xlsx
+└── images/
+    ├── chart1_attendance_score.png
+    ├── chart2_studyhours_score.png
+    ├── chart3_cleaned_dataset.png
+    ├── chart4_bus_q1.png
+    ├── chart5_bus_q2.png
+    ├── chart6_bus_q3.png
+    ├── chart7_regression.png
+    └── chart8_correlation.png
 ```
 
 ---
 
-## 💡 Future Improvements
-
-* Automate analysis using **Python (Pandas, Matplotlib)**.
-* Add **correlation coefficient (r)** and **regression model** for quantitative validation.
-* Integrate **Power BI dashboard** for interactive exploration.
-
----
-
-## 👨‍💻 Author
+## 👤 Author
 
 **Adi Christian**
-Data Analysis and Research Enthusiast
-📧 Contact: [Manfredrayner456@gmail.com or GitHub Profile Link]
-🔗 GitHub Repository: [Add Your Repo URL Here]
+Data Analyst | Research Engineer
+📧 [Your Email Here]
+🌐 [GitHub Profile or LinkedIn]
 
 ---
 
-## 🏷️ License
+## 🏁 License
+
+This repository is licensed under the **MIT License**. You are free to use and modify the materials with proper attribution.
+
+---
+
 
 This project is released under the **MIT License** — you are free to use, modify, and distribute with attribution.
 
